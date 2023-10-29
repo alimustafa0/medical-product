@@ -76,23 +76,23 @@ WSGI_APPLICATION = 'mediproduct_site.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'AliMust123#',
+        'HOST': 'db.friboaejocfciguxasoa.supabase.co',
+        'PORT': '5432'
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'alimustafa',
-#         'PASSWORD': 'AliMust123#',
-#         'HOST': 'db-medical-product.coofoxj4c42x.us-east-1.rds.amazonaws.com',
-#         'PORT': '5432'
-#     }
-# }
 
 
 # Password validation
